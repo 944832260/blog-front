@@ -1,4 +1,4 @@
-@import '../../public/reset.scss';
+@import '../../public/baseDesign.scss';
 
 #Frame {
     width: 100%;
@@ -6,24 +6,29 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    .header {
-		height: 60px;
+    .headers{
+		height: 60px !important;
 		width: 100%;
 		background-color: #ffffff;
 		padding: 0 vm(200) ;
-		display: flex;
-		justify-content: flex-start;
-        align-items: center;
+		// display: flex;
+		// justify-content: flex-start;
+        // align-items: center;
         box-shadow: 0px 3px 3px rgba(140, 136, 136, 0.1);
 		.left{
+			height: 60px !important;
 			width: vm(200);
 			color: #1890ff;
 			font-size: 30px;
 			font-weight: bold;
+			display: flex;
+			align-items: center;
+			float: left;
 		}
 		.right{
 			width: vm(800);
-			height: 60px;
+			height: 60px !important;
+			float: left;
 			ul{
 				width: vm(1000);
 				height: 60px;
@@ -160,6 +165,17 @@
 	}
 }
 @media (max-width: 767px) {
+	#Frame{
+		.headers{
+			padding: 0;
+			padding-left: 20px !important;
+			.left{
+				width: 100%;
+				line-height: 60px;
+				font-size: 20px;
+			}
+		}
+	}
 	.mainstay{
 		width: 100%;
 		padding: 0 10px !important;

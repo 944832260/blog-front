@@ -3,7 +3,25 @@
     background-color: #ffffff;
     margin-bottom: 30px;
     min-height: 86vh;
-    padding: 0 20px;
+    padding:10px 20px 0 20px;
+    .menu{
+        font-size: 14px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        background-color: #f5f5f5;
+        padding-left: 10px;
+        span{
+            margin: 0 3px;
+        }
+        .menuItem{
+            cursor: pointer;
+            &:hover{
+                color: #1890ff;
+            }
+        }
+    }
     .title{
         text-align: center;
         height: 70px;

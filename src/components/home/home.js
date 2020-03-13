@@ -1,13 +1,10 @@
 import * as React from "react";
-import { connect } from 'react-redux'
-import { Newcorpusstore } from '../../store/actions/newcorpus'
-import { renderRoutes } from "react-router-config";
 import "./home.scss";
-import { Popover, Button } from 'antd';
+import { connect } from 'react-redux'
 
 
 
-class Python extends React.Component {
+class Home extends React.Component {
 	state = {
 	};
 
@@ -18,16 +15,11 @@ class Python extends React.Component {
 	componentDidMount() {
 
 	}
-
-
-	toTop = () =>{
-		let contact = document.getElementById('Home')
-        contact.scrollIntoView({
-            behavior: 'smooth'
-        })
+	routerDetail =() =>{
+		this.props.history.push('/detail/1')
 	}
 	render() {
-		let {interactiveList , } = this.state;
+		let {} = this.state;
 		return (
 			<div id="Home">
 				<div className='item'>
@@ -37,7 +29,7 @@ class Python extends React.Component {
 						高峰时刻换个方式开会贵绳股份开始干活但是分公司的机会股份收到过发
 						但是符合规定时间很反感德生科技很过分圣诞节韩国放声大哭割发代首开荒
 					</div>
-					<div className='lookText'>
+					<div className='lookText' onClick={()=>{this.routerDetail()}} >
 						<div>
 							<span>查看全文</span>
 							<img src={require('../../assets/look.png')} alt=""/>
@@ -122,23 +114,15 @@ class Python extends React.Component {
 function mapStateToProps(state) {
 	return {
 		User: state.User,
-		Modules: state.Modules,
-		newcorpusstore: state.Newcorpusstore,
 	}
 }
 
 function mapDispatchToProps(dispatch) {
 	return {
-		InsertModule: (obj) => {
-			dispatch(InsertModule(obj));
-		},
-		Newcorpusstore: (obj) => {
-			dispatch(Newcorpusstore(obj));
-		},
 		UpdateUser: obj => {
 			dispatch(UpdateUser(obj));
 		}
 	}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Python);
+export default Home;

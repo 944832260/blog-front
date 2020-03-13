@@ -13,11 +13,6 @@ ul, li {
   list-style: none;
 }
 
-$vm_base: 1400;
-@function vm($px) {
-  @return ($px / 1400) * 100vw;
-}
-
 // 超出隐藏
 .overflowText {
   overflow: hidden;

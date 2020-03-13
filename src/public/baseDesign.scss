@@ -1,0 +1,6 @@
+
+// 
+$vm_base: 1400;
+@function vm($px) {
+  @return ($px / 1400) * 100vw;
+}

@@ -51,17 +51,17 @@ class Frame extends React.Component {
 		})
 		return (
 			<div id="Frame">
-				<header className='header'>
+				<header className='headers'>
 					<div className='left'>
-						<span>XXX</span>
+						<span>大苏打</span>
 					</div>
-					<div className='right'>
+					{/* <div className='right'>
 						<ul>
 							<li>首页</li>
 							<li>首页</li>
 							<li>首页</li>
 						</ul>
-					</div>
+					</div> */}
 				</header>
 				<div className='mainstay'>
 					<div className='zhanweifu' id='zhanweifu'></div>

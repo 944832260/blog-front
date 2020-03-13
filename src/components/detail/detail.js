@@ -15,11 +15,16 @@ class Detail extends React.Component {
 
 	}
 
-
+    routerHome(){
+        this.props.history.push('/')
+    }
 	render() {
 		let {} = this.state;
 		return (
 			<div id="Detail">
+                <div className='menu'>
+                    <span className='menuItem' onClick={()=>{this.routerHome()}} >首页</span><span>/</span><span>详情页</span>
+                </div>
                 <h3 className='title'>这是我的第一个博客</h3>
                 <div className='info'>
                     <span>2020-20-20</span>
