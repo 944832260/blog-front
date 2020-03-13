@@ -1,0 +1,27 @@
+#Detail{
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    min-height: 86vh;
+    padding: 0 20px;
+    .title{
+        text-align: center;
+        height: 70px;
+        line-height: 70px;
+        color: #333333;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        span{
+            padding: 0 10px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+    }
+    .content{
+        font-size: 16px;
+        color: #666666;
+    }
+}
