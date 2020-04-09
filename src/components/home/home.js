@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./home.scss";
 import { connect } from 'react-redux'
+import Axios from "axios";
 
 
 
@@ -9,11 +10,11 @@ class Home extends React.Component {
 	};
 
 	UNSAFE_componentWillMount() {
-
-	}
-
-	componentDidMount() {
-
+		Axios.delete('/api/v1/user/reg',{
+			data:{
+				phone:"15932281556"
+			}
+		})
 	}
 	routerDetail =() =>{
 		this.props.history.push('/detail/1')
