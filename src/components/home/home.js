@@ -18,6 +18,8 @@ class Home extends React.Component {
 	}
 	routerDetail =() =>{
 		this.props.history.push('/detail/1')
+		console.log(this.props,'this.props')
+		this.props.history.push('/detail/1?a=1')
 	}
 	render() {
 		let {} = this.state;

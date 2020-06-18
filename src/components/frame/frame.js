@@ -1,7 +1,6 @@
 import * as React from "react";
 import "./frame.scss";
 import { Popover, } from 'antd';
-
 import { renderRoutes } from "react-router-config";
 
 
@@ -31,13 +30,13 @@ class Frame extends React.Component {
 
 	}
 
-
 	toTop = () =>{
 		let contact = document.getElementById('zhanweifu')
         contact.scrollIntoView({
             behavior: 'smooth'
         })
 	}
+
 	render() {
 		let {interactiveList , } = this.state;
 		let newinteractiveList = interactiveList.map((e,i)=>{

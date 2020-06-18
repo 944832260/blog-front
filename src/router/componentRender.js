@@ -1,9 +1,5 @@
 import * as React from "react";
 
-
-
-
-
 class ComponentByUser extends React.Component {
 
   UNSAFE_UNSAFE_componentWillMount(){
